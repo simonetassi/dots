@@ -1,5 +1,6 @@
 # to paste in plasma-org.kde.plasma.desktop-appletsrc
-# delete these two lines
+# see the picture in folder
+# delete these three lines
 
 [ActionPlugins][0]
 MiddleButton;NoModifier=org.kde.paste

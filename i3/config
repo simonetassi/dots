@@ -37,8 +37,10 @@ exec_always --no-startup-id "i3altlayout"
 # exec polybar
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 
+#colors
 set $mod Mod4
-set $bg-color 053047
+set $bg-color #c2a136 
+client.focused  $bg-color $bg-color $text-color $bg-color $bg-color
 
 # exec compton (or picom)
 exec_always --no-startup-id picom -f
@@ -74,7 +76,7 @@ bindsym $mod+Return exec i3-sensible-terminal
 bindsym $mod+Shift+q kill
 
 # start rofi (a program launcher)
-bindsym $mod+d exec rofi -show run -lines 3  -opacity "85"  -bw 0 -bc "$bg-color" -bg "$bg-color" -fg "text-color" -hlbg "$bg-color" -hlfg "9575cd" -font "Fira Code 12"
+bindsym $mod+d exec rofi -show run -lines 3  -opacity "85"  -bw 0 -bc "$bg-color" -bg "$bg-color" -fg "text-color" -hlbg "$bg-color" -hlfg "9575cd" -font "LigaSFMonoNerdFont 12.5"
 
 # There also is the (new) i3-dmenu-desktop which only displays applications
 # shipping a .desktop file. It is a wrapper around dmenu, so you need that
@@ -225,7 +227,6 @@ bindsym Shift+Print exec --no-startup-id maim --select "/home/$USER/Pictures/$(d
 bindsym Ctrl+Print exec --no-startup-id maim | xclip -selection clipboard -t image/png
 bindsym Ctrl+$mod+Print exec --no-startup-id maim --window $(xdotool getactivewindow) | xclip -selection clipboard -t image/png
 bindsym Ctrl+Shift+Print exec --no-startup-id maim --select | xclip -selection clipboard -t image/png
-
 
 # Set inner/outer gaps
 gaps inner 20

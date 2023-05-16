@@ -1,0 +1,8 @@
+uBlock Origin
+  - imported https://raw.githubusercontent.com/DandelionSprout/adfilt/master/LegitimateURLShortener.txt
+  // see arkenfox guide https://github.com/arkenfox/user.js/wiki/4.1-Extensions#-dont-bother
+
+Canvas Blocker
+Skip Redirect
+
+Tab Stash

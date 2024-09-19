@@ -1,0 +1,4 @@
+#!/bin/sh
+autorandr docked
+herbstclient detect_monitors
+herbstclient reload

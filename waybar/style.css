@@ -1,0 +1,60 @@
+@define-color text-light #ffa1a1;
+@define-color text-gray #928374;
+@define-color text-dark #282828;
+
+* {
+    border: none;
+    border-radius: 0;
+    font-family: LigaSFMonoNerdFont;
+    font-size: 13px;
+    min-height: 0;
+}
+
+window#waybar {
+    background: #0d0f12;
+    color: #ffefd0;
+}
+
+tooltip {
+  border: 1px solid rgba(100, 114, 125, 0.5);
+}
+tooltip label {
+  color: white;
+}
+
+#workspaces button {
+    padding: 0 3px;
+    background: transparent;
+    color: #ffefd0;
+    border-bottom: 3px solid transparent;
+}
+
+#workspaces button:hover {
+    background: rgba(0, 0, 0, 0.2);
+}
+
+#workspaces button.active {	
+}
+
+#custom-waybar-mpris, #custom-mako-toggle, #backlight, #clock, #battery, #network, #pulseaudio, #memory, #cpu {
+    padding: 0 10px;
+}
+
+#battery.charging {
+    color: #26A65B;
+}
+
+@keyframes blink {
+    to {
+        color: #ffffff;
+    }
+}
+
+#battery.warning:not(.charging) {
+    color: #f53c3c;
+    animation-name: blink;
+    animation-duration: 0.7s;
+    animation-timing-function: steps(12);
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}

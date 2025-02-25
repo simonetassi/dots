@@ -1,0 +1,45 @@
+#outer-box {
+	border: 2px solid #e8bc9c;
+	border-radius: 8px;
+}
+
+#window {
+	background-color: #0d0f12;
+	border-radius: 8px;
+}
+
+#text {
+	color: #ffefd0;
+	font-family: "LigaSFMonoNerdFont";
+}
+
+#text:selected {
+	color: #16161c;
+}
+
+#input {
+	color: #ffefd0;
+	margin: 4px;
+	border: 1px solid #e8bc9c;
+	border-radius: 8px;
+	background-color: #0d0f12;
+}
+
+#scroll {
+	margin: 2px 2px 3px 2px;
+}
+
+#entry {
+	padding: 2px 4px;
+	margin: 1px 2px;
+}
+
+#entry:selected {
+	background-color: #e8bc9c;
+	border-radius: 4px;
+}
+
+#input > image.left,
+#input > image.right { 
+	color: #ffefd0;
+}

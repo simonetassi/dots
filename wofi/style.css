@@ -1,28 +1,28 @@
 #outer-box {
-	border: 2px solid #e8bc9c;
 	border-radius: 8px;
 }
 
 #window {
-	background-color: #0d0f12;
+  background-color: #1d2021;
 	border-radius: 8px;
 }
 
 #text {
-	color: #ffefd0;
+	color: #d4be98;
 	font-family: "LigaSFMonoNerdFont";
+  font-size: 15px;
 }
 
 #text:selected {
-	color: #16161c;
+	color: #1d2021;
 }
 
 #input {
-	color: #ffefd0;
+	color: #d4be98;
 	margin: 4px;
-	border: 1px solid #e8bc9c;
+	border: 1px solid #eeaf78;
 	border-radius: 8px;
-	background-color: #0d0f12;
+  background-color: #1d2021;
 }
 
 #scroll {
@@ -30,13 +30,13 @@
 }
 
 #entry {
-	padding: 2px 4px;
-	margin: 1px 2px;
+	padding: 4px 8px;
 }
 
 #entry:selected {
-	background-color: #e8bc9c;
+	background-color: #eeaf78;
 	border-radius: 4px;
+  margin: 2px 3px;
 }
 
 #input > image.left,

@@ -5,7 +5,7 @@
 	"height": 25,
 	"modules-left":["mpris"],
 	"modules-center":["hyprland/workspaces"],
-	"modules-right":["cpu", "pulseaudio", "backlight", "custom/mako-toggle", "network", "battery", "clock"],
+	"modules-right":["memory", "cpu", "pulseaudio", "backlight", "custom/mako-toggle", "network", "battery", "clock"],
 
   "mpris": {
     "format": " {status_icon}  {dynamic}",
@@ -40,12 +40,12 @@
 	},
 
   "custom/mako-toggle": {
- 		"on-click": "~/.config/waybar/scripts/mako-toggle.sh",
-		"format": "{icon}",
- 		"tooltip": true,
-		"tooltip-format": "Toggle DND on/off",
-		"format-icons": ["", ""]
-	},
+    "exec": "~/.config/waybar/scripts/mako-status.sh",
+    "on-click": "~/.config/waybar/scripts/mako-toggle.sh",
+    "return-type": "json",
+    "format": "{text}",
+    "interval": 2
+  }, 
 
   "pulseaudio": {
 		"format": "{icon} {volume}%",
